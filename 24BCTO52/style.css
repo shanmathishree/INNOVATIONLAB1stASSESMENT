@@ -1,0 +1,13 @@
+nav{
+    background-color: black;
+    nav-index: auto;
+}
+ul{
+    height:50px;
+    background-color: rgb(0, 100, 139);
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
