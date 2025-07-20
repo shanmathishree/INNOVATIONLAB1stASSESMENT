@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="Task1.js"></script>
+    <script src="Task2.js"></script>
+    <script src="Task3.js"></script>
+</body>
+</html>
+
+
+// Declare variables using var, let, and const
+var name = "Shanmathi";
+let age = 20;
+const country = "India";
+
+// Output different messages to the console
+console.log("Name:", name);
+console.log("Age:", age);
+console.log("Country:", country);
+
+// Modify variables (only var and let)
+name = "Shree";
+age = 20;
+
+// Observe the changed outputs
+console.log("Updated Name:", name);
+console.log("Updated Age:", age);
+
+
+
+// Exploring different data types
+let num = 100;                    // Number
+let str = "Hello World";          // String
+let bool = true;                  // Boolean
+let empty = null;                 // Null
+let notDefined;                   // Undefined
+let obj = { name: "Shanmathi" };  // Object
+let sym = Symbol("id");           // Symbol
+
+console.log("Number:", num);
+console.log("String:", str);
+console.log("Boolean:", bool);
+console.log("Null:", empty);
+console.log("Undefined:", notDefined);
+console.log("Object:", obj);
+console.log("Symbol:", sym);
+
+// Type conversion examples
+
+// 1. String conversion
+let numberToString = String(num);
+console.log("Number to String:", numberToString, typeof numberToString);
+
+// 2. Number conversion
+let stringToNumber = Number("123");
+console.log("String to Number:", stringToNumber, typeof stringToNumber);
+
+// 3. Implicit conversion
+let result1 = "5" * 2; // "5" is implicitly converted to number
+console.log("Implicit Conversion (\"5\" * 2):", result1, typeof result1);
+
+let result2 = "10" + 5; // 5 is converted to string => "105"
+console.log("Implicit Conversion (\"10\" + 5):", result2, typeof result2);
+
+// 4. String to Number and vice versa
+let s = "456";
+let n = 789;
+
+let toNumber = Number(s); // string to number
+let toString = String(n); // number to string
+
+console.log("Convert string to number:", toNumber, typeof toNumber);
+console.log("Convert number to string:", toString, typeof toString);
+
+
+
+
+// Arithmetic Operators
+let a = 10, b = 3;
+console.log("Addition:", a + b);       // 13
+console.log("Subtraction:", a - b);    // 7
+console.log("Multiplication:", a * b); // 30
+console.log("Division:", a / b);       // 3.333...
+console.log("Modulus:", a % b);        // 1
+
+// Assignment Operators
+let x = 5;
+x += 2;   // x = x + 2
+console.log("x after += 2:", x);       // 7
+x -= 1;
+console.log("x after -= 1:", x);       // 6
+
+// Relational (Comparison) Operators
+console.log("== :", 5 == "5");         // true
+console.log("=== :", 5 === "5");       // false
+console.log("!= :", 5 != "5");         // false
+console.log("> :", a > b);             // true
+console.log("< :", a < b);             // false
+console.log(">= :", a >= b);           // true
+console.log("<= :", a <= b);           // false
+
+// Logical Operators
+let p = true, q = false;
+console.log("AND (&&):", p && q);      // false
+console.log("OR (||):", p || q);       // true
+console.log("NOT (!):", !p);           // false
+
+// Conditional (Ternary) Operator
+let age = 20;
+let result = (age >= 18) ? "Adult" : "Minor";
+console.log("Ternary Result:", result); // Adult
+
+// Bitwise Operators
+let m = 5; // 0101
+let n = 3; // 0011
+console.log("Bitwise AND:", m & n);     // 1
+console.log("Bitwise OR:", m | n);      // 7
+console.log("Bitwise XOR:", m ^ n);     // 6
+console.log("Bitwise NOT:", ~m);        // -6
+console.log("Left Shift:", m << 1);     // 10
+console.log("Right Shift:", m >> 1);    // 2
+
+// Increment and Decrement Operators
+let count = 10;
+console.log("Pre-Increment:", ++count); // 11
+console.log("Post-Increment:", count++);// 11 (but becomes 12 after)
+console.log("Now count:", count);       // 12
+console.log("Pre-Decrement:", --count); // 11
+console.log("Post-Decrement:", count--);// 11 (but becomes 10 after)
+console.log("Final count:", count);     // 10
